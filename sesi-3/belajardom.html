@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM JS</title>
+</head>
+
+<body>
+    <!-- h1#uji_heading -->
+    <h1 id="uji_heading"></h1>
+
+    <!-- h1#uji_heading{Uji Heading} -->
+    <!-- Hasil ⬇️⬇️ -->
+    <!-- <h1 id="uji_heading">Uji Heading></h1> -->
+
+
+    <!-- p#uji_paragraf -->
+    <p id="uji_paragraf"></p>
+
+
+    <input type="text" id="uji_input">
+
+
+    <script>
+        // document.getElementById('uji_heading').innerHTML = "Heading 1";
+        // document.getElementById('uji_paragraf').innerHTML = "Paragraf";
+        // document.getElementById('uji_input').value = "Input";
+
+
+        // Versi Lain 
+        ujiH1 = document.getElementById('uji_heading');
+        ujiP = document.getElementById('uji_paragraf');
+        ujiInput = document.getElementById('uji_input');
+
+        ujiH1.innerHTML = "Judul";
+        ujiP.innerHTML = "Paragraf";
+        ujiInput.value = "Input"
+    </script>
+</body>
+
+</html>

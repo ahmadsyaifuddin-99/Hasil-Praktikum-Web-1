@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #D6E9FE;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #5995DA;
+    overflow: hidden;
+    padding-left: 25px;
+
+}
+
+@media screen and (max-width: 480px) {
+    .topnav {
+        padding: 0;
+    }
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: blok;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 18px;
+
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #D6E9FE;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #5995DA;
+    color: #D6E9FE;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.menu-container {
+    background-color: #5995DA;
+    padding: 8px 0;
+    width: 100%;
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    /* Membuat item menu sejajar */
+    margin-right: 15px;
+    margin-left: 25px;
+    /* Jarak antara item menu */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-container {
+    background-color: #92c2fa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-container h1 {
+    text-align: center;
+}
+
+.header-container p {
+    text-align: center;
+}
+
+
+
+
+.profile-container {
+    background-color: #D6E9FE;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .profile-container {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+
+.profile {
+    text-align: left;
+    padding: 20px;
+}
+
+.profile h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/* Media query untuk layar HP */
+@media only screen and (max-width: 480px) {
+    .profile p {
+        margin-bottom: 10px;
+
+        /* Gunakan margin untuk memberikan jarak antara paragraf di tampilan HP */
+    }
+}
+
+.profile img {
+    margin-left: 50%;
+
+}
+
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}

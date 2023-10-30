@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+}
+
+.container div {
+    background: peachpuff;
+    border: 5px solid red;
+    height: 100px;
+    flex: 1;
+}

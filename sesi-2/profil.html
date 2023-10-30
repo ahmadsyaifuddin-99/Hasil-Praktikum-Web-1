@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style-profil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="menu-container">
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">IQ & SQ</a>
+            <a href="#porto">Portofolio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="header-container">
+        <!-- Header dan kontennya -->
+        <h1> U - D - I - N </h1>
+        <p><b>U</b>nggul, <b>D</b>inamis, <b>I</b>nspiratif & <b>N</b>aluriah</p>
+    </div>
+
+
+    <div class="profile-container">
+        <img src="images/IMG_20220812_213152.jpg" width="300px">
+        <div id="home" class="profile">
+            <h2>My Biodata</h2>
+            <p>Nama: Ahmad Syaifuddin</p>
+            <p>NPM: 2210010111</p>
+            <p>Alamat: Jl. Transkalimantan No. 78</p>
+            <p>Saya adalah seorang mahasiswa yang senang belajar web development.</p>
+            <p>Hobi saya adalah Mencari sebuah Ilmu Pengetahuan yang berguna bagi hidup saya dan ingin menciptakan masa
+                depan bumi yang semakin cerah.</p>
+            <p>Prinsip: "Seperti bunga teratai yang tumbuh di lumpur dan mekar di atas air, manusia dapat tumbuh
+                dan berkembang bahkan dalam lingkungan yang tidak sempurna."</p>
+            <p>Kata-kata: "Kehidupan bukanlah Tujuan, akan tetapi Sebuah Perjalanan.
+                Nahkodailah dirimu untuk menuju ke arah Jalan Pulang (Kembali Ke pelukan Tuhan)"
+            </p>
+        </div>
+    </div>
+
+
+    <div class="footer"> Copyright © Ahmad Syaifuddin | 2023 All Right Reserved </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

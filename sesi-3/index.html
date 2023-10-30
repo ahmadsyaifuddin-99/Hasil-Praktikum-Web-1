@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <label for="NIK">NIK:</label><br>
+            <input type="text" id="nik" placeholder="NIK" required size="10" maxlength="10"> <br>
+
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" placeholder="Nama" autocomplete="off" required> <br>
+
+            <label for="tgl">Tanggal:</label><br>
+            <input type="date" id="tgl" min="2000-01-01" max="2025-12-31"> <br>
+
+            <label for="gaji_pokok">Gaji Pokok :</label><br>
+            <input type="number" id="gaji_pokok" name="gaji_pokok" min="1000000" step="1000"><br>
+
+            <label for="status_karyawan">Status Karyawan : </label> <br>
+
+            <input type="radio" name="status_karyawan" id="status_karyawan">
+            <label for="">TETAP</label> <br>
+
+            <input type="radio" name="status_karyawan" id="status_karyawan">
+            <label for="">KONTRAK</label> <br>
+
+            <input type="radio" name="status_karyawan" id="status_karyawan">
+            <label for="">MAGANG</label> <br>
+
+            <input type="submit" id="btn_submit" name="btn_submit" value="Submit">
+            <input type="reset" id="btn_reset" name="btn_reset" value="Reset">
+
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

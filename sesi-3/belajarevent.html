@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Event JavaScript</title>
+</head>
+
+<body>
+
+    <!-- HEADING 1 DOM JS FOR MOUSE (MENYOROT) -->
+    <h1 id="uji_heading" onmouseover="sorot(this)" onmouseout="keluarSorot(this)">Sorot dong</h1>
+
+
+    <!-- HEADING 2 DOM -->
+    <h2 id="uji_klik" onmousedown="tahan(this)" onmouseup="lepas(this)">Klik Dong !</h2>
+
+
+    <label for="">Uji Coba Input</label><br>
+    <input type="text" id="uji_input" onkeyup="tiru()"><br>
+    <span id="uji_span"></span><br>
+    <button onclick="klik()">Klik</button>
+    <button onclick="ulangi()">Ulangi</button>
+
+    <script>
+        function sorot(obj) {
+            obj.innerHTML = "Sudah diSorot";
+        }
+
+        function keluarSorot(obj) {
+            obj.innerHTML = "Sorot lagi Dong";
+        }
+
+        function tahan(obj) {
+            obj.innerHTML = "Lepas";
+        }
+
+        function lepas(obj) {
+            obj.innerHTML = "Klik Lagi";
+        }
+
+        function klik() {
+            valueInput = document.getElementById('uji_input').value;
+            span = document.getElementById('uji_span');
+            if (valueInput == "") {
+                span.innerHTML = "Inputan kosong";
+                span.style = "color:red ";
+            } else {
+                span.innerHTML = "Input: '" + valueInput + "'";
+                span.style = "color:blue";
+            }
+        }
+
+        function ulangi() {
+            document.getElementById('uji_input').value = "";
+            document.getElementById('uji_span').innerHTML = "";
+            document.getElementById('uji_heading').innerHTML = "Sorot Dong !";
+            document.getElementById('uji_klik').innerHTML = "Klik Dong !";
+        }
+
+        function tiru() {
+            valueInput = document.getElementById('uji_input').value;
+            document.getElementById('uji_span').innerHTML;
+        }
+    </script>
+</body>
+
+</html>
