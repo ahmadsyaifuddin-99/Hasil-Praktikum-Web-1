@@ -5,5 +5,6 @@
 <img src="https://github.com/ahmadsyaifuddin-99/Hasil-Praktikum-Web-1/assets/77381720/9b3ecda6-9a50-4e01-9b43-eb03c7494a03">
 
 ### Link Page ⬇️⬇️
-Link Page Hosting Static dengan Netlify. Memperbarui sedikit Tampilan dan Responsive Tampilan pada Mobile
+Link Page Hosting Static dengan Netlify. Memperbarui sedikit Tampilan dan Responsive Tampilan pada Mobile.
+<br>
 <a href="https://ahmads-profile.netlify.app/">Lihat Web</a>
